@@ -1,0 +1,141 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#LeftPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38.2vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    background: transparent;
+    transition: 0.4s ease-in-out;
+}
+
+#LeftPanel:hover {
+    background: white;
+    color: #333;
+}
+
+#LeftPanel h1 {
+    font-size: 3.1vw;
+    font-weight: 900;
+    cursor: default;
+}
+
+#LeftPanel #CodeBy {
+    position: fixed;
+    bottom: 3.1vh;
+    right: 3.1vw;
+    font-weight: 100;
+    font-size: 1.3vw;
+    color: black;
+    text-decoration: none;
+}
+
+#LeftPanel #CodeBy span {
+    font-weight: 700;
+    color: white;
+}
+
+#Wrap {
+    position: relative;
+}
+
+#Wrap section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+#Wrap section #ParagraphWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: absolute;
+    right: 14.6vw;
+    width: 32.7vw;
+    height: 23.5vh;
+    z-index: 2;
+    -webkit-backdrop-filter: blur(13px);
+            backdrop-filter: blur(13px);
+    box-shadow: 0 0 7vw rgba(0, 0, 0, 0.5);
+    border-radius: 2.2vw;
+    color: black;
+    cursor: default;
+    overflow: hidden;
+    transition: 0.4s 0.22s ease-in-out;
+}
+
+#Wrap section #ParagraphWrap:hover {
+    width: 47.3vw;
+    height: 52.7vh;
+}
+
+#Wrap section #ParagraphWrap p {
+    position: absolute;
+    top: 25%;
+    padding: 2.2vw;
+    font-size: 2.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.31s ease-in-out;
+}
+
+#Wrap section #ParagraphWrap:hover p {
+    position: absolute;
+    top: 1vw;
+}
+
+#ParagraphWrap #ArticleWrap {
+    position: absolute;
+    bottom: -100vh;
+    width: 38.2vw;
+    height: 30vh;
+    border-radius: 1.3vw;
+    box-shadow: 0 0.7vh 2.2vw rgba(0, 0, 0, 0.5);
+    background: none;
+    transition: 0.7s ease-in-out;
+}
+
+#Wrap section #ParagraphWrap:hover #ArticleWrap {
+    background: white;
+    bottom: 2.2vw;
+}
+
+#Wrap section #ParagraphWrap #ArticleWrap article {
+    padding: 2.2vw;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Wrap section .PageA {
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+#Wrap section .PageB {
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+#Wrap section .PageC {
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+}
